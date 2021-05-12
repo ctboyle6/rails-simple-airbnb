@@ -17,8 +17,6 @@
   <div class="buttons d-flex">
     <%= link_to "Back to flats", flats_path, class: "btn btn-outline-secondary m-1" %>
     <%= link_to "Edit this flat", edit_flat_path(@flat), class: "btn btn-outline-secondary m-1" %>
-    <!-- <a href="#" class="btn btn-outline-primary m-1">More Info</a> -->
-    <!-- <a href="#" class="btn btn-outline-secondary m-1">Edit</a> -->
-    <!-- <a href="#" class="btn btn-outline-danger m-1">Remove</a> -->
+    <%= link_to "Remove this flat", flat_path(@flat), method: :delete, data: { confirm: "Really really??"}, class: "btn btn-outline-danger m-1" %>
   </div>
 </div>
